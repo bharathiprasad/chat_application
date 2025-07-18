@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Chat App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <div class="user-info">
+                <h3>Welcome!</h3>
+                <input type="text" id="usernameInput" placeholder="Enter your username..." class="username-input">
+                <button id="setUsernameBtn" class="set-username-btn">Set Username</button>
+                <div id="userStatus" class="user-status" style="display: none;"></div>
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+            </div>
+            <div class="rooms-section">
+                <h4 style="margin-bottom: 15px;">Chat Rooms</h4>
+                <div id="roomsList"></div>
+            </div>
+        </div>
+
+        <div class="main-chat">
+            <div class="chat-header">
+                <div class="chat-title" id="chatTitle">Select a room to start chatting</div>
+                <div class="online-users" id="onlineUsers"></div>
+            </div>
+
+            <div id="welcomeScreen" class="welcome-screen">
+                <h2>Welcome to Real-time Chat!</h2>
+                <p>Enter your username and select a room to start chatting.</p>
+            </div>
+
+            <div id="chatArea" style="display: none; flex: 1; display: flex; flex-direction: column;">
+                <div class="messages-container" id="messagesContainer"></div>
+                <div class="typing-indicator" id="typingIndicator"></div>
+                <div class="message-input-container">
+                    <input type="text" id="messageInput" placeholder="Type your message..." class="message-input">
+                    <button id="sendButton" class="send-button" disabled>Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
