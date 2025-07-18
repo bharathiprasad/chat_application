@@ -54,7 +54,7 @@ A simple real-time chat application built using **Flask**, **Socket.IO**, and **
 ```
 chat_application/
 │
-├── backend/             # CSS and client-side JS files
+├── backend/             
 │   └── app.py
 │
 ├── frontend/          
