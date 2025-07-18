@@ -18,7 +18,7 @@ A simple real-time chat application built using **Flask**, **Socket.IO**, and **
 
 ## 📸 Screenshots
 
-> _Add screenshots of your UI here, e.g., chat screen, room creation, etc._
+
 
 ![Chat Screenshot](https://github.com/bharathiprasad/chat_application/tree/main/chat_app/output)
 
