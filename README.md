@@ -54,14 +54,15 @@ A simple real-time chat application built using **Flask**, **Socket.IO**, and **
 ```
 chat_application/
 │
-├── static/             # CSS and client-side JS files
-│   └── style.css
+├── backend/             # CSS and client-side JS files
+│   └── app.py
 │
-├── templates/          # HTML templates
+├── frontend/          
+│   ├── app.js
+│   └── styles.css
 │   ├── index.html
-│   └── chat.html
+│   └── config.js
 │
-├── app.py              # Main Flask server
 ├── requirements.txt    # Python dependencies
 └── README.md
 ```
