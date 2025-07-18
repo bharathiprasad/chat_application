@@ -1,6 +1,5 @@
 # Real-Time Chat Application
-
-A modern real-time chat application with separated backend and frontend architecture.
+A simple real-time chat application built using **Flask**, **Socket.IO**, and **HTML/CSS/JavaScript**. This project enables multiple users to join chat rooms and exchange messages instantly — ideal for learning real-time web communication using Python.
 
 ## Project Structure
 
