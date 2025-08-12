@@ -15,7 +15,6 @@ chat-app/
 │   ├── config.js         # Configuration file
 └── README.md             # This file
 ```
-
 ## Quick Start
 
 ### 1. Backend Setup
